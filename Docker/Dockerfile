@@ -1,6 +1,9 @@
 
-FROM golang:1.15.7-buster
-ENV GO111MODULE=on
-ENV GOFLAGS=-mod=vendor
+# Version of GO to use
+FROM golang:1.15.7-buster 
+# Dir to work
+WORKDIR /app
+#Named the imagee and compile
+RUN go build -o /git
 EXPOSE 8080
 
