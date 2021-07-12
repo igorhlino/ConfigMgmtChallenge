@@ -1,6 +1,5 @@
 
 FROM golang:1.15.7-buster
-RUN go get -u github.com/beego/bee
 ENV GO111MODULE=on
 ENV GOFLAGS=-mod=vendor
 ENV APP_USER app
