@@ -1,5 +1,3 @@
-version: '0'
-
 services:
   nginx-proxy:
     restart: always
