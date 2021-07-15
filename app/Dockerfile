@@ -16,7 +16,7 @@ COPY . .
 RUN go build -o main .
 
 # Move to /dist directory as the place for resulting binary folder
-WORKDIR /dist
+WORKDIR /app
 
 # Copy binary from build to main folder
 RUN cp /build/main .
@@ -25,4 +25,4 @@ RUN cp /build/main .
 EXPOSE 8080
 
 # Command to run when starting the container
-CMD ["/dist/main"]
+CMD ["/app"]
