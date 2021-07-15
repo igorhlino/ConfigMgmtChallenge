@@ -1,4 +1,4 @@
-module github.com/igorhlino/ConfigMgmtChallenge/app
+module github.com/igorhlino/ConfigMgmtChallenge/application
 
 require (
 	github.com/gorilla/context v1.1.1
