@@ -1,0 +1,9 @@
+version: '2'
+services:
+  go-app:
+    restart: always
+    build:
+      dockerfile: Dockerfile
+      context: .
+    environment:
+      - VIRTUAL_HOST=test.com
