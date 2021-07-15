@@ -13,7 +13,7 @@ WORKDIR /build
 COPY . .
 
 # Build the application
-RUN go build -o main .
+RUN go build -o main.go
 
 # Move to /dist directory as the place for resulting binary folder
 WORKDIR /app
