@@ -5,5 +5,5 @@ WORKDIR /app
 # Copy files
 COPY *.go .
 #Named the imagee and compile
-RUN go run main.go
+RUN go build main.go
 EXPOSE 8080
