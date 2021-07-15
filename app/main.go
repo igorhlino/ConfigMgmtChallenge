@@ -18,7 +18,6 @@ func main() {
 			m = "point"
 		}
 		fmt.Fprintf(w, "Hey! You win "+strconv.Itoa(points)+" "+m)
-		fmt.Println("ta rodando")
 	})
 
 	http.ListenAndServe("127.0.0.1:8080", nil)
