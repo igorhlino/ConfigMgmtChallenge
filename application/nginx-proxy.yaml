@@ -3,10 +3,10 @@ version: '2'
 services:
   nginx-proxy:
     restart: always
-    image: jwilder/nginx-proxy
+    image: nginx
     ports:
-      - "80:80"
-      - "443:443"
+      - "80:8080"
+      - "443:8080"
     volumes:
       - "/etc/nginx/vhost.d"
       - "/usr/share/nginx/html"
