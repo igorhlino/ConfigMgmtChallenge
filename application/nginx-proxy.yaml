@@ -1,7 +1,7 @@
 services:
   nginx-proxy:
     restart: always
-    image: jwilder/nginx-proxy
+    image: https://hub.docker.com/r/jwilder/nginx-proxy
     ports:
       - "80:80"
       - "443:443"
