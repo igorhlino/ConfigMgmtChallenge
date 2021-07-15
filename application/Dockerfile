@@ -2,7 +2,7 @@
 FROM golang:latest
 
 # Set the Current Working Directory inside the container
-WORKDIR /app
+WORKDIR /application
 
 # Copy everything from the current directory to the Working Directory inside the container
 COPY . .
