@@ -1,6 +1,6 @@
 
 # Version of GO to use
-FROM golang:1.15.7-buster 
+FROM golang:latest
 #Dir to work
 WORKDIR /app
 # Copy files
