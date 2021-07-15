@@ -9,7 +9,10 @@ COPY . .
 
 # Build the Go app
 RUN go build -o main .
-RUN VIRTUAL_HOST= teste.com
+
+ARG virtual_host=default_value # <- this one's new
+ENV var=$virtual_host # we reference it directly
+
 # Expose port 8080 to the outside world
 EXPOSE 8080
 
