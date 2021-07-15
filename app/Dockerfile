@@ -1,28 +1,12 @@
-FROM golang:alpine
 
-# Set necessary environmet variables needed for our image
-ENV GO111MODULE=on \
-    CGO_ENABLED=0 \
-    GOOS=linux \
-    GOARCH=amd64
-
-# Move to working directory /build
-WORKDIR /build
-
-# Copy the code into the container
-COPY . .
-
-# Build the application
-RUN go build -o main.go
-
-# Move to /dist directory as the place for resulting binary folder
+# Version of GO to use
+FROM golang:1.15.7-buster 
+#Dir to work
 WORKDIR /app
-
-# Copy binary from build to main folder
-RUN cp /build/main .
-
-# Export necessary port
+# Copy files
+COPY *.go .
+#Named the imagee and compile
+RUN go build -o main .
 EXPOSE 8080
-
-# Command to run when starting the container
-CMD ["/app"]
+# Command to run the executable
+CMD ["./main"]
