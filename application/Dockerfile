@@ -4,6 +4,9 @@ FROM golang:latest
 # Set the Current Working Directory inside the container
 WORKDIR /application
 
+# Copy files
+COPY *.go .
+
 # Build the Go app
 RUN go build -o main .
 
