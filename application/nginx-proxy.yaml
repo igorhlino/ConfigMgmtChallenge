@@ -1,5 +1,5 @@
 services:
-  nginx-proxy:
+  nginx:
     restart: always
     image: nginx
     ports:
