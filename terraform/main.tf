@@ -11,10 +11,6 @@ resource "google_compute_instance" "default" {
     }
   }
 
-  // Local SSD disk
- # scratch_disk {
- #   interface = "SCSI"
- # }
 
   network_interface {
     network = var.network
@@ -28,13 +24,4 @@ resource "google_compute_instance" "default" {
     foo = "bar"
   }
   
-  #metadata_startup_script = <<SCRIPT
-  #  SCRIPT
-
-
-  #service_account {
-    # Google recommends custom service accounts that have cloud-platform scope and permissions granted via IAM Roles.
-    #email  = var.service_account
-  #  scopes = ["cloud-platform"]
-  #}
 }
