@@ -1,0 +1,6 @@
+# Terraform Directory
+
+# provider.tf = For configurations about the provider and how the connection between VS IDE with Cloud will work.
+# main.tf = The main file for the configurations, have the instructions to do the tasks.
+# variables.tf = have the defined variables used in main.tf
+
