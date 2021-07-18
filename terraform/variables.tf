@@ -15,7 +15,7 @@ variable "zone" {
 
 variable "name" {
   description = "The name of the instance"
-  default     = "docker-servr"
+  default     = "appserver01"
 }
 
 variable "type" {
@@ -43,7 +43,3 @@ variable "subnetwork" {
   default     = "default"
 }
 
-#variable "service_account" {
-#  description = "Default service account"
-#  default     = "694620525608-compute@developer.gserviceaccount.com"
-#}
