@@ -6,4 +6,4 @@ services:
       dockerfile: Dockerfile
       context: .
     environment:
-      - VIRTUAL_HOST=test.com
+      - VIRTUAL_HOST=configmgmtchallenge.com
