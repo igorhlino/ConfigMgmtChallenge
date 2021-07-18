@@ -1,9 +1,0 @@
-# Import image
-FROM nginx:1.21.1-alpine
-# Install and update the certificates
-RUN apk add --no-cache --virtual .run-deps \
-    ca-certificates bash wget openssl \
-    && update-ca-certificates
-# Expose the ports
-EXPOSE 80
-EXPOSE 443
