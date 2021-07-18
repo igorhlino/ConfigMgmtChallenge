@@ -19,6 +19,7 @@ resource "google_compute_instance" "default" {
       // Ephemeral IP
     }
   }
+  metadata_startup_script = file("Documents/startup.sh")
 
   metadata = {
     foo = "bar"
